@@ -12,6 +12,9 @@ services:
     networks:
       - jupyterhub-network
 
+  notebook-image:
+    build: ./notebook-image
+    image: notebook-image
 networks:
   jupyterhub-network:
     driver: bridge
